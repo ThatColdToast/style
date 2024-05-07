@@ -20,17 +20,18 @@
         <![endif]-->
 
         <p class="m-4 p-2 bg-slate-800 rounded-lg">Do not use unscoped <code>using</code> statements</p>
-        <p class="m-4 p-2 bg-slate-800 rounded-lg">Do not use <code>auto</code> unless it makes the code clearer to read or safer. Don&#39;t use it to save you from writing the type</p>
-        <p class="m-4 p-2 bg-slate-800 rounded-lg">If you allocate dynamic (heap) memory that memory can only be used inside of the class that creates it. If you need to use memory outside of that class, use smart pointers to share or transfer ownership.</p>
+        <p class="m-4 p-2 bg-slate-800 rounded-lg">Don&#39;t use magic values, use enums instead.</p>
         <p class="m-4 p-2 bg-slate-800 rounded-lg">Don&#39;t use exceptions, period.</p>
+        <p class="m-4 p-2 bg-slate-800 rounded-lg">If you allocate dynamic (heap) memory that memory can only be used inside of the class that creates it. If you need to use memory outside of that class, use smart pointers to share or transfer ownership.</p>
+        <p class="m-4 p-2 bg-slate-800 rounded-lg">Do not use <code>goto</code>, <code>setjmp</code>, <code>longjmp</code>, and limit recursion.</p>
+        <p class="m-4 p-2 bg-slate-800 rounded-lg">Pull requests should aim to change less than 4 files</p>
+        <p class="m-4 p-2 bg-slate-800 rounded-lg">Limit the use of the preprocessor</p>
         <p class="m-4 p-2 bg-slate-800 rounded-lg">Do not use implementation inheritance. If you use inheritance, use interface inheritance (abstract class). If you think you need implementation inheritance, use composition instead.</p>
+        <p class="m-4 p-2 bg-slate-800 rounded-lg">Do not use <code>auto</code> unless it makes the code clearer to read or safer. Don&#39;t use it to save you from writing the type</p>
+        <p class="m-4 p-2 bg-slate-800 rounded-lg">Only dereference nested pointers one at a time. Eg no <code>**variable</code></p>
+        <p class="m-4 p-2 bg-slate-800 rounded-lg">Check ALL return values. If you want to ignore a value, cast the return value to void.<code>(void)printf(...)</code></p>
         <p class="m-4 p-2 bg-slate-800 rounded-lg">Don&#39;t split up code into separate functions just to make things easier to read. Long functions are okay. Use limited commenting to help the reader follow. Split code into separate functions only when you reuse that functionality in multiple locations.</p>
         <p class="m-4 p-2 bg-slate-800 rounded-lg">Class member variables should be <code>PascalCase</code> and local variables and function arguments should be <code>camelCase</code></p>
-        <p class="m-4 p-2 bg-slate-800 rounded-lg">Do not use <code>goto</code>, <code>setjmp</code>, <code>longjmp</code>, and limit recursion.</p>
-        <p class="m-4 p-2 bg-slate-800 rounded-lg">Check ALL return values. If you want to ignore a value, cast the return value to void.<code>(void)printf(...)</code></p>
-        <p class="m-4 p-2 bg-slate-800 rounded-lg">Limit the use of the preprocessor</p>
-        <p class="m-4 p-2 bg-slate-800 rounded-lg">Only dereference nested pointers one at a time. Eg no <code>**variable</code></p>
-        <p class="m-4 p-2 bg-slate-800 rounded-lg">Don&#39;t use magic values, use enums instead.</p>
         <p class="m-4 p-2 bg-slate-800 rounded-lg">Minimize heap allocations frame to frame. Allocate what you must in batches instead of many small allocations.</p>
         <p class="m-4 p-2 bg-slate-800 rounded-lg">Write all your code in English, but when you have to write C++, test it.</p>
     </body>
